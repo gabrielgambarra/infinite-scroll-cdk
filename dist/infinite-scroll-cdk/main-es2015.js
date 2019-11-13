@@ -296,7 +296,7 @@ let FactService = class FactService {
             maxDay = 29;
         }
         const day = Math.floor(Math.random() * maxDay) + 1;
-        return this.http.get(`http://numbersapi.com/${month}/${day}/date?json`);
+        return this.http.get(`https://numbersapi.com/${month}/${day}/date?json`);
     }
 };
 FactService.ctorParameters = () => [

@@ -310,7 +310,7 @@ var FactService = /** @class */ (function () {
             maxDay = 29;
         }
         var day = Math.floor(Math.random() * maxDay) + 1;
-        return this.http.get("http://numbersapi.com/" + month + "/" + day + "/date?json");
+        return this.http.get("https://numbersapi.com/" + month + "/" + day + "/date?json");
     };
     FactService.ctorParameters = function () { return [
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
