@@ -21,6 +21,6 @@ export class FactService {
       maxDay = 29;
     }
     const day = Math.floor(Math.random() * maxDay) + 1;
-    return this.http.get<Fact[]>(`http://numbersapi.com/${month}/${day}/date?json`);
+    return this.http.get<Fact[]>(`https://cors-anywhere.herokuapp.com/http://numbersapi.com/${month}/${day}/date?json`);
   }
 }
